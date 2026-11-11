@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Les solutions aqueuses | Maths-SP</title>
+
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #f4f6fa;
+  color: #17243a;
+  line-height: 1.6;
+}
+
+header {
+  background: #102b50;
+  color: white;
+  padding: 20px;
+}
+
+header a {
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  max-width: 850px;
+  margin: 30px auto;
+  padding: 0 16px;
+}
+
+.cours {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 3px 15px #00000010;
+}
+
+h1, h2 {
+  color: #163d6b;
+}
+
+.encadre {
+  background: #edf4fc;
+  padding: 15px;
+  border-left: 4px solid #1764b0;
+  margin: 20px 0;
+}
+
+button {
+  background: #1764b0;
+  color: white;
+  border: none;
+  padding: 12px 18px;
+  border-radius: 7px;
+  cursor: pointer;
+  font-size: 15px;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  color: #667085;
+}
+</style>
+</head>
+
+<body>
+
+<header>
+  <strong>Maths-SP</strong>
+  <p><a href="index.html">← Retour aux chapitres</a></p>
+</header>
+
+<main>
+
+<div class="cours">
+
+<h1>Les solutions aqueuses</h1>
+<p><strong>Niveau :</strong> Troisième</p>
+<p><strong>Discipline :</strong> Physique-Chimie</p>
+
+<hr>
+
+<h2>1. Qu'est-ce qu'une solution aqueuse ?</h2>
+
+<p>
+Une solution aqueuse est un mélange homogène obtenu lorsqu'un
+soluté est dissous dans l'eau.
+</p>
+
+<div class="encadre">
+<strong>À retenir :</strong>
+<ul>
+<li>Le solvant est le liquide qui dissout le soluté.</li>
+<li>Le soluté est la substance dissoute.</li>
+<li>Dans une solution aqueuse, le solvant est l'eau.</li>
+</ul>
+</div>
+
+<h2>2. La concentration massique</h2>
+
+<p>
+La concentration massique représente la masse de soluté
+dissoute par unité de volume de solution.
+</p>
+
+<div class="encadre">
+<strong>Relation :</strong>
+<p> C = m / V </p>
+<p>Avec :</p>
+<ul>
+<li>C : concentration massique en g/L ;</li>
+<li>m : masse du soluté en g ;</li>
+<li>V : volume de solution en L.</li>
+</ul>
+</div>
+
+<h2>3. Application</h2>
+
+<p>
+On dissout 10 g de sel dans de l'eau pour obtenir 500 mL
+de solution.
+</p>
+
+<p>Calculer la concentration massique de cette solution.</p>
+
+<button onclick="afficherCorrection()">
+  Afficher la correction
+</button>
+
+<div id="correction" hidden class="encadre">
+<strong>Correction :</strong>
+<p>On a m = 10 g et V = 0,5 L.</p>
+<p>C = m / V = 10 / 0,5</p>
+<p><strong>C = 20 g/L</strong></p>
+</div>
+
+</div>
+
+</main>
+
+<footer>
+Maths-SP · Apprendre, comprendre et progresser
+</footer>
+
+<script>
+function afficherCorrection() {
+  const correction = document.getElementById("correction");
+  correction.hidden = !correction.hidden;
+}
+</script>
+
+</body>
+</html>
